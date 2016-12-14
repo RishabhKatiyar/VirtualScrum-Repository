@@ -22,7 +22,7 @@ namespace VirtualScrum.Models
 
         [ForeignKey("ScrumTeamMember"), Column(Order = 1)]
         [Index("IxDailyStatus", 3, IsClustered = false, IsUnique = true)]
-        public int MemberId { get; set; }
+        public string UserName { get; set; }
         #endregion
 
         public ScrumTeamMember ScrumTeamMember { get; set; }
