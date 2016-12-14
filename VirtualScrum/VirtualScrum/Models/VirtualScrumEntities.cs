@@ -13,7 +13,7 @@ namespace VirtualScrum.Models
         //    var ensureDLLIsCopied =
         //        System.Data.Entity.SqlServer.SqlProviderServices.Instance;   
         //}
-        public DbSet<Member> Members { get; set; }
+        //public DbSet<Member> Members { get; set; }
         public DbSet<ScrumTeam> ScrumTeams { get; set; }
         public DbSet<ScrumTeamMember> ScrumTeamMembers { get; set; }
         public DbSet<DailyStatus> DailyStatus { get; set; }

@@ -6,6 +6,7 @@ using System.Web;
 
 namespace VirtualScrum.Models
 {
+    [Obsolete]
     public class Member
     {
         [Key]

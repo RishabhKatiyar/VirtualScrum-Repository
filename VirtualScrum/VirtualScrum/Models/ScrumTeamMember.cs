@@ -13,9 +13,9 @@ namespace VirtualScrum.Models
         [Key, ForeignKey("ScrumTeam"), Column(Order = 1)]
         public int ScrumTeamId { get; set; }
 
-        public Member Member { get; set; }
-        [Key, ForeignKey("Member"), Column(Order = 2)]
-        public int MemberId { get; set; }
+        //public Member Member { get; set; }
+        //[Key, ForeignKey("Member"), Column(Order = 2)]
+        public string UserName { get; set; }
         public bool isActive { get; set; }
         public string ScrumDesignation { get; set; }
     }
