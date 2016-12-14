@@ -35,9 +35,9 @@
             @Html.DisplayFor(modelItem => item.ScrumDesignation)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+            @Html.ActionLink("Edit", "Edit", new { scrumTeamID = item.ScrumTeamId, userName = item.UserName }) |
+            @Html.ActionLink("Details", "Details", new { scrumTeamID = item.ScrumTeamId, userName = item.UserName }) |
+            @Html.ActionLink("Delete", "Delete", new { scrumTeamID = item.ScrumTeamId, userName = item.UserName })
         </td>
     </tr>
 }

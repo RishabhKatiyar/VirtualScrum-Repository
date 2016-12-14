@@ -1,0 +1,51 @@
+﻿@model IEnumerable<VirtualScrum.Models.DailyStatusDetail>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.DailyStatus.UserName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DidYesterday)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DoToday)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BlockingIssue)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.DailyStatus.UserName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DidYesterday)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DoToday)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BlockingIssue)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.DailyStatusDetailsId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.DailyStatusDetailsId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.DailyStatusDetailsId })
+        </td>
+    </tr>
+}
+
+</table>

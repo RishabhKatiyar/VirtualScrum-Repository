@@ -1,0 +1,56 @@
+﻿@model VirtualScrum.Models.DailyStatusDetail
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>DailyStatusDetail</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.DailyStatus.UserName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DailyStatus.UserName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DidYesterday)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DidYesterday)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DoToday)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DoToday)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BlockingIssue)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BlockingIssue)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

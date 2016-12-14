@@ -145,6 +145,7 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\DailyStatusController.cs" />
+    <Compile Include="Controllers\DailyStatusDetailController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ScrumTeamController.cs" />
     <Compile Include="Controllers\ScrumTeamMemberController.cs" />
@@ -252,6 +253,11 @@
     <Content Include="Views\ScrumTeam\Details.cshtml" />
     <Content Include="Views\ScrumTeam\Edit.cshtml" />
     <Content Include="Views\ScrumTeam\Index.cshtml" />
+    <Content Include="Views\DailyStatusDetail\Create.cshtml" />
+    <Content Include="Views\DailyStatusDetail\Delete.cshtml" />
+    <Content Include="Views\DailyStatusDetail\Details.cshtml" />
+    <Content Include="Views\DailyStatusDetail\Edit.cshtml" />
+    <Content Include="Views\DailyStatusDetail\Index.cshtml" />
     <Content Include="Views\DailyStatus\Create.cshtml" />
     <Content Include="Views\DailyStatus\Delete.cshtml" />
     <Content Include="Views\DailyStatus\Details.cshtml" />
