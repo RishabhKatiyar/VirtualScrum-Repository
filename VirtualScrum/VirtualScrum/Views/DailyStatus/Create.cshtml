@@ -1,10 +1,14 @@
-﻿@model VirtualScrum.Models.DailyStatus
+﻿@*@model VirtualScrum.Models.DailyStatus*@
+@model Tuple<VirtualScrum.Models.DailyStatus, VirtualScrum.Models.DailyStatusInfo>
 
 @{
     ViewBag.Title = "Create";
 }
 
 <h2>Create</h2>
+@{
+    IList<SelectListItem> ScrumTeamInfoList = Model.Item2.ScrumTeamInfoList;
+}
 
 
 @using (Html.BeginForm()) 
@@ -17,26 +21,26 @@
         @Html.ValidationSummary(true)
 
         <div class="form-group">
-            @Html.LabelFor(model => model.Date, new { @class = "control-label col-md-2" })
+            @Html.LabelFor(model => model.Item1.Date, new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.Date)
-                @Html.ValidationMessageFor(model => model.Date)
+                @Html.EditorFor(model => model.Item1.Date)
+                @Html.ValidationMessageFor(model => model.Item1.Date)
             </div>
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.ScrumTeamId, "ScrumTeamId", new { @class = "control-label col-md-2" })
+            @Html.LabelFor(model => model.Item1.ScrumTeamId, "ScrumTeamId", new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.DropDownList("ScrumTeamId", String.Empty)
-                @Html.ValidationMessageFor(model => model.ScrumTeamId)
+                @Html.DropDownListFor(model => model.Item1.ScrumTeamId, ScrumTeamInfoList, "")
+                @Html.ValidationMessageFor(model => model.Item1.ScrumTeamId)
             </div>
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.UserName, "UserName", new { @class = "control-label col-md-2" })
+            @Html.LabelFor(model => model.Item1.UserName, "UserName", new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.UserName)
-                @Html.ValidationMessageFor(model => model.UserName)
+                @Html.EditorFor(model => model.Item1.UserName)
+                @Html.ValidationMessageFor(model => model.Item1.UserName)
             </div>
         </div>
 

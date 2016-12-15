@@ -39,26 +39,47 @@ namespace VirtualScrum.Controllers
         // GET: /DailyStatus/Create
         public ActionResult Create()
         {
+            //add list here
+            DailyStatus dailystatus = new DailyStatus();
+
+            dailystatus.Date = DateTime.Now;
+
+            DailyStatusInfo dailystatusInfo = new DailyStatusInfo();
+
+            var scrumTeamIdNames = from res in db.ScrumTeams select new { ScrumTeamId = res.ScrumTeamId, TeamProjectName = res.TeamProjectName };
+            IList<SelectListItem> scrumTeamIdNameList = new List<SelectListItem>();
+            foreach (var ob in scrumTeamIdNames)
+            {
+                scrumTeamIdNameList.Add(new SelectListItem { Text = ob.TeamProjectName, Value = (ob.ScrumTeamId).ToString() });
+            }
+
+            dailystatusInfo.ScrumTeamInfoList = scrumTeamIdNameList;
+
             ViewBag.ScrumTeamId = new SelectList(db.ScrumTeamMembers, "ScrumTeamId", "ScrumDesignation");
-            return View();
+
+            var temp = new Tuple<DailyStatus, DailyStatusInfo>(dailystatus, dailystatusInfo);
+
+            return View(temp);
         }
+
 
         // POST: /DailyStatus/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include="DailyStatusId,Date,ScrumTeamId,UserName")] DailyStatus dailystatus)
+        //public ActionResult Create([Bind(Include="DailyStatusId,Date,ScrumTeamId,UserName")] DailyStatus dailystatus)
+        public ActionResult Create([Bind(Prefix="Item1", Include = "DailyStatusId,Date,ScrumTeamId,UserName")] DailyStatus dailyStatus)
         {
             if (ModelState.IsValid)
             {
-                db.DailyStatus.Add(dailystatus);
+                db.DailyStatus.Add(dailyStatus);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
 
-            ViewBag.ScrumTeamId = new SelectList(db.ScrumTeamMembers, "ScrumTeamId", "ScrumDesignation", dailystatus.ScrumTeamId);
-            return View(dailystatus);
+            ViewBag.ScrumTeamId = new SelectList(db.ScrumTeamMembers, "ScrumTeamId", "ScrumDesignation", dailyStatus.ScrumTeamId);
+            return View(dailyStatus);
         }
 
         // GET: /DailyStatus/Edit/5
@@ -82,7 +103,7 @@ namespace VirtualScrum.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include="DailyStatusId,Date,ScrumTeamId,UserName")] DailyStatus dailystatus)
+        public ActionResult Edit([Bind(Include = "DailyStatusId,Date,ScrumTeamId,UserName")] DailyStatus dailystatus)
         {
             if (ModelState.IsValid)
             {
