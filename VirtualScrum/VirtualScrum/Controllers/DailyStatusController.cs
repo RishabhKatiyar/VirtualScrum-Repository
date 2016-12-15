@@ -11,7 +11,6 @@ using VirtualScrum.Models;
 namespace VirtualScrum.Controllers
 {
     [Authorize]
-    
     public class DailyStatusController : Controller
     {
         private VirtualScrumEntities db = new VirtualScrumEntities();
