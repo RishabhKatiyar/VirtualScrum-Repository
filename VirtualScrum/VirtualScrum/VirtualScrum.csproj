@@ -253,16 +253,16 @@
     <Content Include="Views\ScrumTeam\Details.cshtml" />
     <Content Include="Views\ScrumTeam\Edit.cshtml" />
     <Content Include="Views\ScrumTeam\Index.cshtml" />
-    <Content Include="Views\DailyStatusDetail\Create.cshtml" />
-    <Content Include="Views\DailyStatusDetail\Delete.cshtml" />
-    <Content Include="Views\DailyStatusDetail\Details.cshtml" />
-    <Content Include="Views\DailyStatusDetail\Edit.cshtml" />
-    <Content Include="Views\DailyStatusDetail\Index.cshtml" />
     <Content Include="Views\DailyStatus\Create.cshtml" />
     <Content Include="Views\DailyStatus\Delete.cshtml" />
     <Content Include="Views\DailyStatus\Details.cshtml" />
     <Content Include="Views\DailyStatus\Edit.cshtml" />
     <Content Include="Views\DailyStatus\Index.cshtml" />
+    <Content Include="Views\DailyStatusDetail\Create.cshtml" />
+    <Content Include="Views\DailyStatusDetail\Delete.cshtml" />
+    <Content Include="Views\DailyStatusDetail\Details.cshtml" />
+    <Content Include="Views\DailyStatusDetail\Edit.cshtml" />
+    <Content Include="Views\DailyStatusDetail\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

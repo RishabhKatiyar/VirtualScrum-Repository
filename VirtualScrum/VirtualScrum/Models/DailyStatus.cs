@@ -26,6 +26,13 @@ namespace VirtualScrum.Models
         public string UserName { get; set; }
         #endregion
 
+
+        #region StatusUpdate
+        public string DidYesterday { get; set; }
+        public string DoToday { get; set; }
+        public string BlockingIssue { get; set; }
+        #endregion
+
         public ScrumTeamMember ScrumTeamMember { get; set; }
     }
 
