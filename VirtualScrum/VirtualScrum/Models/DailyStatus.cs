@@ -38,10 +38,6 @@ namespace VirtualScrum.Models
 
     public class DailyStatusInfo
     {
-        public IList<SelectListItem> ScrumTeamInfoList
-        {
-            get;
-            set;
-        }
+        public IList<SelectListItem> ScrumTeamInfoList { get; set; }
     }
 }
