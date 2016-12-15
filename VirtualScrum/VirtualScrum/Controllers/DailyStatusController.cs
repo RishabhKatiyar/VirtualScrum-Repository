@@ -10,13 +10,17 @@ using VirtualScrum.Models;
 
 namespace VirtualScrum.Controllers
 {
+    [Authorize]
+    
     public class DailyStatusController : Controller
     {
         private VirtualScrumEntities db = new VirtualScrumEntities();
 
         // GET: /DailyStatus/
+     
         public ActionResult Index()
         {
+
             var dailystatus = db.DailyStatus.Include(d => d.ScrumTeamMember);
             return View(dailystatus.ToList());
         }

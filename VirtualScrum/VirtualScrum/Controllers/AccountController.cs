@@ -38,7 +38,7 @@ namespace VirtualScrum.Controllers
                     }
                     else
                     {
-                        return RedirectToAction("Index", "Home");
+                        return RedirectToAction("OnLogin", "Home");
                     }
                 }
                 else

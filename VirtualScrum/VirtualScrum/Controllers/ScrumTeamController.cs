@@ -10,11 +10,14 @@ using VirtualScrum.Models;
 
 namespace VirtualScrum.Controllers
 {
+    [Authorize]
     public class ScrumTeamController : Controller
     {
+        
         private VirtualScrumEntities db = new VirtualScrumEntities();
 
         // GET: /ScrumTeam/
+      
         public ActionResult Index()
         {
             return View(db.ScrumTeams.ToList());

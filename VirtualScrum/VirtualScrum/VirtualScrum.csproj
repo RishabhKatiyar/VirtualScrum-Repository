@@ -257,6 +257,7 @@
     <Content Include="Views\DailyStatus\Details.cshtml" />
     <Content Include="Views\DailyStatus\Edit.cshtml" />
     <Content Include="Views\DailyStatus\Index.cshtml" />
+    <Content Include="Views\Home\OnLogin.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
