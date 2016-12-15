@@ -154,7 +154,6 @@
     </Compile>
     <Compile Include="Models\AccountModels.cs" />
     <Compile Include="Models\DailyStatus.cs" />
-    <Compile Include="Models\DailyStatusDetail.cs" />
     <Compile Include="Models\Member.cs" />
     <Compile Include="Models\ScrumTeam.cs" />
     <Compile Include="Models\ScrumTeamMember.cs" />
