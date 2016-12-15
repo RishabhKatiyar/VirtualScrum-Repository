@@ -1,4 +1,4 @@
-﻿@model VirtualScrum.Models.DailyStatus
+﻿@model VirtualScrum.Models.DailyStatusDetail
 
 @{
     ViewBag.Title = "Edit";
@@ -12,32 +12,32 @@
     @Html.AntiForgeryToken()
     
     <div class="form-horizontal">
-        <h4>DailyStatus</h4>
+        <h4>DailyStatusDetail</h4>
         <hr />
         @Html.ValidationSummary(true)
-        @Html.HiddenFor(model => model.DailyStatusId)
+        @Html.HiddenFor(model => model.DailyStatusDetailsId)
 
         <div class="form-group">
-            @Html.LabelFor(model => model.Date, new { @class = "control-label col-md-2" })
+            @Html.LabelFor(model => model.DidYesterday, new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.Date)
-                @Html.ValidationMessageFor(model => model.Date)
+                @Html.EditorFor(model => model.DidYesterday)
+                @Html.ValidationMessageFor(model => model.DidYesterday)
             </div>
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.ScrumTeamId, "ScrumTeamId", new { @class = "control-label col-md-2" })
+            @Html.LabelFor(model => model.DoToday, new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.DropDownList("ScrumTeamId", String.Empty)
-                @Html.ValidationMessageFor(model => model.ScrumTeamId)
+                @Html.EditorFor(model => model.DoToday)
+                @Html.ValidationMessageFor(model => model.DoToday)
             </div>
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.UserName, "UserName", new { @class = "control-label col-md-2" })
+            @Html.LabelFor(model => model.BlockingIssue, new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.UserName)
-                @Html.ValidationMessageFor(model => model.UserName)
+                @Html.EditorFor(model => model.BlockingIssue)
+                @Html.ValidationMessageFor(model => model.BlockingIssue)
             </div>
         </div>
 

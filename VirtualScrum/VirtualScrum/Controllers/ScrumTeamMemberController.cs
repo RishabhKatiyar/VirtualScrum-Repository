@@ -22,13 +22,13 @@ namespace VirtualScrum.Controllers
         }
 
         // GET: /ScrumTeamMember/Details/5
-        public ActionResult Details(int? id)
+        public ActionResult Details(int scrumTeamID, string userName)
         {
-            if (id == null)
+            if (scrumTeamID == null || userName == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            ScrumTeamMember scrumteammember = db.ScrumTeamMembers.Find(id);
+            ScrumTeamMember scrumteammember = db.ScrumTeamMembers.Find(scrumTeamID, userName);
             if (scrumteammember == null)
             {
                 return HttpNotFound();
@@ -62,13 +62,13 @@ namespace VirtualScrum.Controllers
         }
 
         // GET: /ScrumTeamMember/Edit/5
-        public ActionResult Edit(int? id)
+        public ActionResult Edit(int  scrumTeamID, string userName)
         {
-            if (id == null)
+            if (scrumTeamID == null || userName == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            ScrumTeamMember scrumteammember = db.ScrumTeamMembers.Find(id);
+            ScrumTeamMember scrumteammember = db.ScrumTeamMembers.Find(scrumTeamID, userName);
             if (scrumteammember == null)
             {
                 return HttpNotFound();
@@ -95,13 +95,13 @@ namespace VirtualScrum.Controllers
         }
 
         // GET: /ScrumTeamMember/Delete/5
-        public ActionResult Delete(int? id)
+        public ActionResult Delete(int scrumTeamID, string userName)
         {
-            if (id == null)
+            if (scrumTeamID == null || userName == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            ScrumTeamMember scrumteammember = db.ScrumTeamMembers.Find(id);
+            ScrumTeamMember scrumteammember = db.ScrumTeamMembers.Find(scrumTeamID, userName);
             if (scrumteammember == null)
             {
                 return HttpNotFound();
@@ -112,9 +112,9 @@ namespace VirtualScrum.Controllers
         // POST: /ScrumTeamMember/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public ActionResult DeleteConfirmed(int id)
+        public ActionResult DeleteConfirmed(int scrumTeamID, string userName)
         {
-            ScrumTeamMember scrumteammember = db.ScrumTeamMembers.Find(id);
+            ScrumTeamMember scrumteammember = db.ScrumTeamMembers.Find(scrumTeamID, userName);
             db.ScrumTeamMembers.Remove(scrumteammember);
             db.SaveChanges();
             return RedirectToAction("Index");
