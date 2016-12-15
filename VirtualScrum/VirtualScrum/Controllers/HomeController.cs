@@ -10,11 +10,22 @@ namespace VirtualScrum.Controllers
     {
         //
         // GET: /Home/
-
+        
+        
         public ActionResult Index()
         {
             return View();
+
+            
         }
+
+        public ActionResult OnLogin()
+        {
+            return View();
+        }
+    
+
+
 
     }
 }

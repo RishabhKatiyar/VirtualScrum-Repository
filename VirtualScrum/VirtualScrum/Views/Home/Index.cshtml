@@ -2,11 +2,24 @@
     ViewBag.Title = "Virtual Scrum";
 }
 
-<h2>Virtual Scrum Home Page!!!!!</h2>
+<h2>Virtual Scrum Home Page!!!!! CLick To login or Register</h2>
 
-<p>
+@if (Request.IsAuthenticated)
+{
+    <text>
+
+        <h2> Hello,click @Html.ActionLink(User.Identity.Name, "Manage", "Account", routeValues: null, htmlAttributes: new { @class = "username", title = "Manage" }) to change your password</h2>
+    </text>
+}
+else
+{
+    <p>LOGIN</p>
+}
+
+
+@*<p>
 @Html.ActionLink("LogOn", "LogOn", "Account")
 </p>
 <p>
 @Html.ActionLink("Register", "Register", "Account")
-</p>
+</p>*@

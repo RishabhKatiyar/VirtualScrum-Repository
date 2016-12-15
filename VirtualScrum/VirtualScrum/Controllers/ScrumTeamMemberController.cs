@@ -10,6 +10,7 @@ using VirtualScrum.Models;
 
 namespace VirtualScrum.Controllers
 {
+    [Authorize]
     public class ScrumTeamMemberController : Controller
     {
         private VirtualScrumEntities db = new VirtualScrumEntities();
