@@ -42,6 +42,30 @@
         </div>
 
         <div class="form-group">
+            @Html.LabelFor(model => model.DidYesterday, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.DidYesterday)
+                @Html.ValidationMessageFor(model => model.DidYesterday)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.DoToday, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.DoToday)
+                @Html.ValidationMessageFor(model => model.DoToday)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.BlockingIssue, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.BlockingIssue)
+                @Html.ValidationMessageFor(model => model.BlockingIssue)
+            </div>
+        </div>
+
+        <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
                 <input type="submit" value="Save" class="btn btn-default" />
             </div>

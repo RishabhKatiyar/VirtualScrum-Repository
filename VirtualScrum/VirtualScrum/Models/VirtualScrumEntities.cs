@@ -17,6 +17,7 @@ namespace VirtualScrum.Models
         public DbSet<ScrumTeam> ScrumTeams { get; set; }
         public DbSet<ScrumTeamMember> ScrumTeamMembers { get; set; }
         public DbSet<DailyStatus> DailyStatus { get; set; }
-        public DbSet<DailyStatusDetail> DailyStatusDetail { get; set; }
+
+        //public DbSet<DailyStatusDetail> DailyStatusDetail { get; set; }
     }
 }

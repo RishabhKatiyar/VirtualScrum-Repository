@@ -17,6 +17,15 @@
         <th>
             @Html.DisplayNameFor(model => model.Date)
         </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DidYesterday)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DoToday)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BlockingIssue)
+        </th>
         <th></th>
     </tr>
 
@@ -27,6 +36,15 @@
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.Date)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DidYesterday)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DoToday)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BlockingIssue)
         </td>
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.DailyStatusId }) |

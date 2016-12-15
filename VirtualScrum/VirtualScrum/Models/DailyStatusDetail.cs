@@ -7,6 +7,7 @@ using System.Web;
 
 namespace VirtualScrum.Models
 {
+    [Obsolete]
     public class DailyStatusDetail
     {
         [Key, ForeignKey("DailyStatus")]

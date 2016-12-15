@@ -68,18 +68,17 @@ namespace VirtualScrum.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        //public ActionResult Create([Bind(Include="DailyStatusId,Date,ScrumTeamId,UserName")] DailyStatus dailystatus)
-        public ActionResult Create([Bind(Prefix="Item1", Include = "DailyStatusId,Date,ScrumTeamId,UserName")] DailyStatus dailyStatus)
+        public ActionResult Create([Bind(Prefix="Item1",Include="DailyStatusId,Date,ScrumTeamId,UserName,DidYesterday,DoToday,BlockingIssue")] DailyStatus dailystatus)
         {
             if (ModelState.IsValid)
             {
-                db.DailyStatus.Add(dailyStatus);
+                db.DailyStatus.Add(dailystatus);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
 
-            ViewBag.ScrumTeamId = new SelectList(db.ScrumTeamMembers, "ScrumTeamId", "ScrumDesignation", dailyStatus.ScrumTeamId);
-            return View(dailyStatus);
+            ViewBag.ScrumTeamId = new SelectList(db.ScrumTeamMembers, "ScrumTeamId", "ScrumDesignation", dailystatus.ScrumTeamId);
+            return View(dailystatus);
         }
 
         // GET: /DailyStatus/Edit/5
@@ -103,7 +102,7 @@ namespace VirtualScrum.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "DailyStatusId,Date,ScrumTeamId,UserName")] DailyStatus dailystatus)
+        public ActionResult Edit([Bind(Include="DailyStatusId,Date,ScrumTeamId,UserName,DidYesterday,DoToday,BlockingIssue")] DailyStatus dailystatus)
         {
             if (ModelState.IsValid)
             {
