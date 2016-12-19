@@ -206,6 +206,7 @@
     <Content Include="Content\Site.css" />
     <None Include="Scripts\jquery-3.1.1.intellisense.js" />
     <Content Include="Images\HomeScreen.jpg" />
+    <Content Include="Images\HomeScreen1.jpg" />
     <Content Include="Scripts\jquery-3.1.1.js" />
     <Content Include="Scripts\jquery-3.1.1.min.js" />
     <Content Include="Scripts\jquery-3.1.1.slim.js" />
