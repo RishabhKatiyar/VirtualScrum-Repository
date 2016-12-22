@@ -1,0 +1,90 @@
+﻿@model IEnumerable<VirtualScrum.Models.ScrumTeam>
+
+
+@{
+    ViewBag.Title = "View User Teams";
+}
+
+
+<h2>Join a new team ,Out of of existing and update the status</h2>
+@{
+    List<SelectListItem> orgDropDownItems = new List<SelectListItem>();
+    foreach(var teamName in Model)
+    {
+        var str = teamName.TeamProjectName;
+        orgDropDownItems.Add(new SelectListItem { Text =str, Value = str });
+    }
+    
+    List<SelectListItem> joinedTeam = new List<SelectListItem>();
+    foreach(var joinedTeamName in Model)
+    {
+        var str=joinedTeamName.TeamProjectName;
+        joinedTeam.Add(new SelectListItem{Text=str,Value=str});
+        
+        
+    }
+
+    //List<SelectListItem> orgDropDownItems = new List<SelectListItem>();
+    //    foreach (var teamName in Model.TeamProjectName)
+    //    {
+    //    var str = teamName;
+    //    orgDropDownItems.Add(new SelectListItem { Text = teamName.ToString(), Value = teamName.ToString() });
+    //    }
+
+
+        //List<selectlistitem> registeredUsersList = new List<selectlistitem>();
+        //foreach (string teamName in Model.TeamProjectName)
+        //{
+        //    string str = teamName;
+        //    registeredUsersList.Add(new SelectListItem { Text = teamName, Value = teamName });
+        //}
+
+    
+  }
+
+
+        <div>
+            <fieldset>
+                <legend>Join a Team!!!!</legend>
+
+                <div class="editor-label">
+                    @* @Html.LabelFor("Team Name")*@                 
+                </div>
+                <div class="editor-field">
+                    @Html.DropDownList("DropDownName", orgDropDownItems, new { @class = "form-control" })
+                </div>
+
+                <p>
+                    <input type="submit" value="Join Team" />
+                </p>
+            </fieldset>
+        </div>
+
+<div>
+    <fieldset>
+        <legend>Member of </legend>
+
+        <div class="editor-label">
+            @* @Html.LabelFor("Team Name")*@
+        </div>
+        <div class="editor-field">
+            @Html.DropDownList("DropDownName", orgDropDownItems, new { @class = "form-control" })
+        </div>
+        <div class="editor-field">
+            <ul>
+                @foreach (var genre in Model)
+                {
+                    //<li>@Html.ActionLink(genre.Name, "Browse", new { genre = genre.Name })</li>
+                    <li>@Html.ActionLink(genre.TeamProjectName</li>
+                }
+            </ul>
+        </div>
+
+
+
+
+        <p>
+            <input type="submit" value="Join Team" />
+        </p>
+    </fieldset>
+</div>
