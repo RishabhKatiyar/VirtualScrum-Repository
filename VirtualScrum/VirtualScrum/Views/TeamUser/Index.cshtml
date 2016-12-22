@@ -64,27 +64,19 @@
     <fieldset>
         <legend>Member of </legend>
 
-        <div class="editor-label">
-            @* @Html.LabelFor("Team Name")*@
-        </div>
-        <div class="editor-field">
-            @Html.DropDownList("DropDownName", orgDropDownItems, new { @class = "form-control" })
-        </div>
+
+        
         <div class="editor-field">
             <ul>
-                @foreach (var genre in Model)
+                @foreach (var teamName in joinedTeam)
                 {
                     //<li>@Html.ActionLink(genre.Name, "Browse", new { genre = genre.Name })</li>
-                    <li>@Html.ActionLink(genre.TeamProjectName</li>
+                    //<li>@teamName.Text</li>
+                    var str = teamName.Text;
+                    <li>@Html.ActionLink(str,"Index","DailyStatus")</li>
+                    
                 }
             </ul>
         </div>
-
-
-
-
-        <p>
-            <input type="submit" value="Join Team" />
-        </p>
     </fieldset>
 </div>
