@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.Web.Security;
 using VirtualScrum.Models;
 
 namespace VirtualScrum.Controllers
@@ -11,6 +12,12 @@ namespace VirtualScrum.Controllers
     {
         //private ScrumTeam db = new ScrumTeam();
         private VirtualScrumEntities db = new VirtualScrumEntities();
+        private string userName;
+        public TeamUserController()
+        {
+            MembershipUser UserName = Membership.GetUser();
+            userName = UserName.ToString();
+        }
         //
         // GET: /TeamUser/
         public ActionResult Index()
