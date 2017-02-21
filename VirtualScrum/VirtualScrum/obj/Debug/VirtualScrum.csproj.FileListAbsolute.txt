@@ -79,3 +79,44 @@ C:\MVC\VirtualScrum-Repository\VirtualScrum\VirtualScrum\bin\System.Web.WebPages
 C:\MVC\VirtualScrum-Repository\VirtualScrum\VirtualScrum\obj\Debug\VirtualScrum.csprojResolveAssemblyReference.cache
 C:\MVC\VirtualScrum-Repository\VirtualScrum\VirtualScrum\obj\Debug\VirtualScrum.dll
 C:\MVC\VirtualScrum-Repository\VirtualScrum\VirtualScrum\obj\Debug\VirtualScrum.pdb
+C:\Users\rkatiyar\Documents\Visual Studio 2013\Projects\VirtualScrum-Repository\VirtualScrum\VirtualScrum\bin\VirtualScrum.dll.config
+C:\Users\rkatiyar\Documents\Visual Studio 2013\Projects\VirtualScrum-Repository\VirtualScrum\VirtualScrum\bin\VirtualScrum.dll
+C:\Users\rkatiyar\Documents\Visual Studio 2013\Projects\VirtualScrum-Repository\VirtualScrum\VirtualScrum\bin\VirtualScrum.pdb
+C:\Users\rkatiyar\Documents\Visual Studio 2013\Projects\VirtualScrum-Repository\VirtualScrum\VirtualScrum\bin\Antlr3.Runtime.dll
+C:\Users\rkatiyar\Documents\Visual Studio 2013\Projects\VirtualScrum-Repository\VirtualScrum\VirtualScrum\bin\EntityFramework.dll
+C:\Users\rkatiyar\Documents\Visual Studio 2013\Projects\VirtualScrum-Repository\VirtualScrum\VirtualScrum\bin\EntityFramework.SqlServer.dll
+C:\Users\rkatiyar\Documents\Visual Studio 2013\Projects\VirtualScrum-Repository\VirtualScrum\VirtualScrum\bin\EntityFramework.SqlServerCompact.dll
+C:\Users\rkatiyar\Documents\Visual Studio 2013\Projects\VirtualScrum-Repository\VirtualScrum\VirtualScrum\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\rkatiyar\Documents\Visual Studio 2013\Projects\VirtualScrum-Repository\VirtualScrum\VirtualScrum\bin\Newtonsoft.Json.dll
+C:\Users\rkatiyar\Documents\Visual Studio 2013\Projects\VirtualScrum-Repository\VirtualScrum\VirtualScrum\bin\System.Data.SqlServerCe.dll
+C:\Users\rkatiyar\Documents\Visual Studio 2013\Projects\VirtualScrum-Repository\VirtualScrum\VirtualScrum\bin\System.Net.Http.Formatting.dll
+C:\Users\rkatiyar\Documents\Visual Studio 2013\Projects\VirtualScrum-Repository\VirtualScrum\VirtualScrum\bin\System.Web.Helpers.dll
+C:\Users\rkatiyar\Documents\Visual Studio 2013\Projects\VirtualScrum-Repository\VirtualScrum\VirtualScrum\bin\System.Web.Http.dll
+C:\Users\rkatiyar\Documents\Visual Studio 2013\Projects\VirtualScrum-Repository\VirtualScrum\VirtualScrum\bin\System.Web.Http.WebHost.dll
+C:\Users\rkatiyar\Documents\Visual Studio 2013\Projects\VirtualScrum-Repository\VirtualScrum\VirtualScrum\bin\System.Web.Mvc.dll
+C:\Users\rkatiyar\Documents\Visual Studio 2013\Projects\VirtualScrum-Repository\VirtualScrum\VirtualScrum\bin\System.Web.Optimization.dll
+C:\Users\rkatiyar\Documents\Visual Studio 2013\Projects\VirtualScrum-Repository\VirtualScrum\VirtualScrum\bin\System.Web.Providers.dll
+C:\Users\rkatiyar\Documents\Visual Studio 2013\Projects\VirtualScrum-Repository\VirtualScrum\VirtualScrum\bin\System.Web.Razor.dll
+C:\Users\rkatiyar\Documents\Visual Studio 2013\Projects\VirtualScrum-Repository\VirtualScrum\VirtualScrum\bin\System.Web.WebPages.Deployment.dll
+C:\Users\rkatiyar\Documents\Visual Studio 2013\Projects\VirtualScrum-Repository\VirtualScrum\VirtualScrum\bin\System.Web.WebPages.dll
+C:\Users\rkatiyar\Documents\Visual Studio 2013\Projects\VirtualScrum-Repository\VirtualScrum\VirtualScrum\bin\System.Web.WebPages.Razor.dll
+C:\Users\rkatiyar\Documents\Visual Studio 2013\Projects\VirtualScrum-Repository\VirtualScrum\VirtualScrum\bin\WebGrease.dll
+C:\Users\rkatiyar\Documents\Visual Studio 2013\Projects\VirtualScrum-Repository\VirtualScrum\VirtualScrum\bin\Antlr3.Runtime.pdb
+C:\Users\rkatiyar\Documents\Visual Studio 2013\Projects\VirtualScrum-Repository\VirtualScrum\VirtualScrum\bin\EntityFramework.xml
+C:\Users\rkatiyar\Documents\Visual Studio 2013\Projects\VirtualScrum-Repository\VirtualScrum\VirtualScrum\bin\EntityFramework.SqlServer.xml
+C:\Users\rkatiyar\Documents\Visual Studio 2013\Projects\VirtualScrum-Repository\VirtualScrum\VirtualScrum\bin\EntityFramework.SqlServerCompact.xml
+C:\Users\rkatiyar\Documents\Visual Studio 2013\Projects\VirtualScrum-Repository\VirtualScrum\VirtualScrum\bin\Newtonsoft.Json.xml
+C:\Users\rkatiyar\Documents\Visual Studio 2013\Projects\VirtualScrum-Repository\VirtualScrum\VirtualScrum\bin\System.Net.Http.Formatting.xml
+C:\Users\rkatiyar\Documents\Visual Studio 2013\Projects\VirtualScrum-Repository\VirtualScrum\VirtualScrum\bin\System.Web.Helpers.xml
+C:\Users\rkatiyar\Documents\Visual Studio 2013\Projects\VirtualScrum-Repository\VirtualScrum\VirtualScrum\bin\System.Web.Http.xml
+C:\Users\rkatiyar\Documents\Visual Studio 2013\Projects\VirtualScrum-Repository\VirtualScrum\VirtualScrum\bin\System.Web.Http.WebHost.xml
+C:\Users\rkatiyar\Documents\Visual Studio 2013\Projects\VirtualScrum-Repository\VirtualScrum\VirtualScrum\bin\System.Web.Mvc.xml
+C:\Users\rkatiyar\Documents\Visual Studio 2013\Projects\VirtualScrum-Repository\VirtualScrum\VirtualScrum\bin\System.Web.Optimization.xml
+C:\Users\rkatiyar\Documents\Visual Studio 2013\Projects\VirtualScrum-Repository\VirtualScrum\VirtualScrum\bin\System.Web.Providers.xml
+C:\Users\rkatiyar\Documents\Visual Studio 2013\Projects\VirtualScrum-Repository\VirtualScrum\VirtualScrum\bin\System.Web.Razor.xml
+C:\Users\rkatiyar\Documents\Visual Studio 2013\Projects\VirtualScrum-Repository\VirtualScrum\VirtualScrum\bin\System.Web.WebPages.xml
+C:\Users\rkatiyar\Documents\Visual Studio 2013\Projects\VirtualScrum-Repository\VirtualScrum\VirtualScrum\bin\System.Web.WebPages.Deployment.xml
+C:\Users\rkatiyar\Documents\Visual Studio 2013\Projects\VirtualScrum-Repository\VirtualScrum\VirtualScrum\bin\System.Web.WebPages.Razor.xml
+C:\Users\rkatiyar\Documents\Visual Studio 2013\Projects\VirtualScrum-Repository\VirtualScrum\VirtualScrum\obj\Debug\VirtualScrum.csprojResolveAssemblyReference.cache
+C:\Users\rkatiyar\Documents\Visual Studio 2013\Projects\VirtualScrum-Repository\VirtualScrum\VirtualScrum\obj\Debug\VirtualScrum.dll
+C:\Users\rkatiyar\Documents\Visual Studio 2013\Projects\VirtualScrum-Repository\VirtualScrum\VirtualScrum\obj\Debug\VirtualScrum.pdb
