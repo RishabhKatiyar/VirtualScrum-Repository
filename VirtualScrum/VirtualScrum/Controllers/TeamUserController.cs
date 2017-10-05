@@ -24,7 +24,7 @@ namespace VirtualScrum.Controllers
         {
             //var TeamList = db.TeamProjectName; 
             //var TeamList = db.TeamProjectName;
-            var TeamList = db.ScrumTeams; //where user is not the part of that team
+            var TeamList = db.ScrumTeams;
             return View(TeamList);
         }
 
